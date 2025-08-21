@@ -1,0 +1,87 @@
+/*Calculator body*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#calculator {
+    font-family: sans-serif;
+    background-color: #404143;
+    border-radius: 20px;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* calculator display*/
+#display {
+    width: 100%;
+    padding: 30px;
+    font-size: 40px;
+    text-align: left;
+    border: none;
+    background-color: #404143;
+    color: white;
+}
+
+/*Calculator keys*/
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons */
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* Numbers */
+.numbers {
+    background-color: #5e5e5e;
+}
+
+.numbers:hover {
+    background-color: hsla(0, 0%, 37%, 0.737);
+}
+
+.numbers:active {
+    background-color: #858282;
+}
+
+/* operators */
+.operator {
+    background-color: #ff9502;
+}
+
+.operator:hover {
+    background-color: hsla(35, 100%, 50%, 0.737);
+}
+
+.operator:active {
+    background-color: hsl(35, 95%, 63%);
+}
+
+/* other actions */
+.other {
+    background-color: #7d7d7d;
+}
+
+.other:hover {
+    background-color: hsla(0, 0%, 49%, 0.737);
+}
+
+.other:active {
+    background-color: #a9a9a9;
+}

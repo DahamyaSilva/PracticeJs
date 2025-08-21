@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <script src="https://kit.fontawesome.com/a6ab1e2e87.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            
+            <button class="operator" onclick="updateToDisplay('/')">/</button>
+            <button class="operator" onclick="updateToDisplay('*')">*</button>
+            <button class="operator" onclick="updateToDisplay('+')">+</button>
+            <button class="operator" onclick="updateToDisplay('-')">-</button>
+            <button class="numbers" onclick="updateToDisplay('7')">7</button>
+            <button class="numbers" onclick="updateToDisplay('8')">8</button>
+            <button class="numbers" onclick="updateToDisplay('9')">9</button>
+            <button class="other" onclick="clearDisplay()">C</button>
+            <button class="numbers" onclick="updateToDisplay('4')">4</button>
+            <button class="numbers" onclick="updateToDisplay('5')">5</button>
+            <button class="numbers" onclick="updateToDisplay('6')">6</button>
+            <button class="other" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="numbers" onclick="updateToDisplay('1')">1</button>
+            <button class="numbers" onclick="updateToDisplay('2')">2</button>
+            <button class="numbers" onclick="updateToDisplay('3')">3</button>
+            <button class="other" onclick="calculate()">=</button>
+            <button class="numbers" onclick="updateToDisplay('0')">0</button>
+            <button class="other" onclick="updateToDisplay('.')">.</button>
+                  
+        </div>
+        
+    </div> 
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
