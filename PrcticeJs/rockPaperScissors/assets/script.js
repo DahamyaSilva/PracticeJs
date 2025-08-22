@@ -8,10 +8,12 @@ const emojis = {
     scissors: '✂️'
 };
 
+//function to get the computer's choice
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
+//function to determine the winner/ the game logic
 function determineWinner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         return 'tie';
@@ -28,6 +30,7 @@ function determineWinner(playerChoice, computerChoice) {
     }
 }
 
+//function to update the display according to the choices
 function updateDisplay(playerChoice, computerChoice, result) {
     document.getElementById('playerChoice').textContent = emojis[playerChoice];
     document.getElementById('computerChoice').textContent = emojis[computerChoice];
@@ -46,6 +49,7 @@ function updateDisplay(playerChoice, computerChoice, result) {
     }
 }
 
+//function to update the score
 function updateScore(result) {
     if (result === 'win') {
         playerScore++;
@@ -56,6 +60,7 @@ function updateScore(result) {
     }
 }
 
+//game function
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
     const result = determineWinner(playerChoice, computerChoice);
@@ -64,6 +69,7 @@ function playGame(playerChoice) {
     updateScore(result);
 }
 
+//function to reset the game
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
