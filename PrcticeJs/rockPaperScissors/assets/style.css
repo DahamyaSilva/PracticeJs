@@ -87,6 +87,17 @@ body {
     margin: 0 20px;
 }
 
+.game-info {
+    background: rgba(255, 255, 255, 0.66);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 30px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .result {
     font-size: 2em;
     font-weight: bold;
